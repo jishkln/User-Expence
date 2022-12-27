@@ -26,10 +26,6 @@ class Home extends StatelessWidget {
                 log('message $value');
               },
             );
-            // IconButton(
-            //   onPressed: () => homeController.addNewTransation(),
-            //   icon: const Icon(Icons.add),
-            // );
           })
         ],
       ),

@@ -9,17 +9,18 @@ class TransationController extends GetxController {
   final titleInputController = TextEditingController();
   final amountInputController = TextEditingController();
   final List<Transaction> userTransations = [];
-  bool isDark = false;
 
   DateTime selectedDate = DateTime.now();
+
+  bool isDark = false;
 
   void changeTheme(bool value) {
     if (value == true) {
       isDark = !isDark;
-      Get.changeTheme(ThemeData.dark());
+      Get.changeThemeMode(ThemeMode.dark);
     } else {
       isDark = !isDark;
-      Get.changeTheme(ThemeData.light());
+      Get.changeThemeMode(ThemeMode.light);
     }
     update();
   }

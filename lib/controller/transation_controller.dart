@@ -9,10 +9,9 @@ class TransationController extends GetxController {
   final titleInputController = TextEditingController();
   final amountInputController = TextEditingController();
   final List<Transaction> userTransations = [];
+  bool isDark = false;
 
   DateTime selectedDate = DateTime.now();
-
-  bool isDark = false;
 
   void changeTheme(bool value) {
     if (value == true) {
